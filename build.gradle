@@ -6,10 +6,20 @@ mainClassName = 'ohtu.Main'
 repositories {
     jcenter()
 }
+project.ext {
+    cucumberVersion = '1.2.5'
+}
 
 dependencies {
     testCompile 'junit:junit:4.12'
     testCompile "org.testfx:testfx-core:4.0.+"
     testCompile "org.testfx:testfx-junit:4.0.+"    
     testCompile "org.testfx:openjfx-monocle:8u76-b04"
+    testCompile 'info.cukes:cucumber-java:' + cucumberVersion
+    testCompile 'info.cukes:cucumber-junit:' + cucumberVersion
+}
+
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
 }
