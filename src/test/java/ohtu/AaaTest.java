@@ -5,6 +5,8 @@ import javafx.stage.Stage;
 import org.junit.*;
 import org.testfx.framework.junit.ApplicationTest;
 
+// a placeholder test that ensures that app is running when cucumber tests are run
+
 public class AaaTest extends ApplicationTest {
 
     @Override
