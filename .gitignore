@@ -1,0 +1,11 @@
+.classpath
+.gitignore
+.gradle/
+.nb-gradle/
+.project
+.settings/
+.vscode/
+bin/
+build/
+gradle/
+nbproject/

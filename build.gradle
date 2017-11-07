@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'ohtu.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile "org.testfx:testfx-core:4.0.+"
+    testCompile "org.testfx:testfx-junit:4.0.+"    
+}
+
